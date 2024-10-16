@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Create New Campaing(failed)">
+    <classes>
+      <class name="testcases.TC_CreateNewCampaing">
+        <methods>
+          <include name="beforeclass"/>
+          <include name="afterclass"/>
+          <include name="TC_CreateNewCampaing"/>
+          <include name="setapprover_newcampaiging_confirmation"/>
+          <include name="setapprover_newcampaiging"/>
+          <include name="setapprover_newcampaiging_saveandsend"/>
+        </methods>
+      </class> <!-- testcases.TC_CreateNewCampaing -->
+    </classes>
+  </test> <!-- Create New Campaing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

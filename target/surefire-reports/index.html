@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-CMSproject" class="navigator-link">
+              <span class="suite-name border-failed">CMSproject</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-CMSproject" class="navigator-link ">
+                    <span>C:\Users\sandunj\eclipse-workspace\CMSautomation1\Testsuites\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-CMSproject" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-CMSproject" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-CMSproject" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-CMSproject" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-CMSproject" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-CMSproject" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">28 methods, 4 failed,   24 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CMSproject" class="hide-methods failed suite-CMSproject"> (hide)</a> <!-- hide-methods failed suite-CMSproject -->
+                      <a href="#" panel-name="suite-CMSproject" class="show-methods failed suite-CMSproject"> (show)</a> <!-- show-methods failed suite-CMSproject -->
+                    </span>
+                    <div class="method-list-content failed suite-CMSproject">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="TC_CreateNewCampaing">TC_CreateNewCampaing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="setapprover_newcampaiging">setapprover_newcampaiging</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="setapprover_newcampaiging_confirmation">setapprover_newcampaiging_confirmation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="setapprover_newcampaiging_saveandsend">setapprover_newcampaiging_saveandsend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CMSproject -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CMSproject" class="hide-methods passed suite-CMSproject"> (hide)</a> <!-- hide-methods passed suite-CMSproject -->
+                      <a href="#" panel-name="suite-CMSproject" class="show-methods passed suite-CMSproject"> (show)</a> <!-- show-methods passed suite-CMSproject -->
+                    </span>
+                    <div class="method-list-content passed suite-CMSproject">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenessrule_nextclick">Fillawarenessrule_nextclick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenessrule_time_rule">Fillawarenessrule_time_rule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenesssinfor_clicknextr">Fillawarenesssinfor_clicknextr</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenesssinfor_enterdiscriptionenter">Fillawarenesssinfor_enterdiscriptionenter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenesssinforgetlangue">Fillawarenesssinforgetlangue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenesssinforselectchannel">Fillawarenesssinforselectchannel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenesssinforsetaudiunce">Fillawarenesssinforsetaudiunce</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="Fillawarenesssinfortitle">Fillawarenesssinfortitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="NewCampain_AwarenessRule">NewCampain_AwarenessRule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="clickcheckaudiancebutton">clickcheckaudiancebutton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="clickcheckaudiancecheckbox">clickcheckaudiancecheckbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="clickcheckaudianceselecttestaudince">clickcheckaudianceselecttestaudince</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="clickon_next_genralinforTo_awarnessinfor">clickon_next_genralinforTo_awarnessinfor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="clickoncampaingmangemnt">clickoncampaingmangemnt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="enterCampagin_catagory">enterCampagin_catagory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="enterCampagin_dilvaryrate">enterCampagin_dilvaryrate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="enterCampagin_discriptnrnter">enterCampagin_discriptnrnter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="enterCampagin_fileupload">enterCampagin_fileupload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="enterCampagin_modeselect">enterCampagin_modeselect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="enterCampagintitle">enterCampagintitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="enterCampagintype">enterCampagintype</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="logging_aims">logging_aims</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="newcampaing">newcampaing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CMSproject" title="testcases.TC_CreateNewCampaing" class="method navigator-link" hash-for-method="selectcms">selectcms</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CMSproject -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CMSproject" class="panel CMSproject">
+          <div class="suite-CMSproject-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC_CreateNewCampaing</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_CreateNewCampaing">
+                  </a> <!-- TC_CreateNewCampaing -->
+                  <span class="method-name">TC_CreateNewCampaing</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [TC_CreateNewCampaing] with [interface org.openqa.selenium.WebDriver].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setapprover_newcampaiging">
+                  </a> <!-- setapprover_newcampaiging -->
+                  <span class="method-name">setapprover_newcampaiging</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&quot;Search by Employee Name or Email&quot;)]&quot;}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HOISL_SANDUNJ&apos;, ip: &apos;192.168.8.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\sandunj\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11746fe01c39e68f6cd710a643da1e8c
+*** Element info: {Using=xpath, value=//span[contains(text(),&quot;Search by Employee Name or Email&quot;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.NewCampaingSetApprover.setapprover(NewCampaingSetApprover.java:28)
+	at testcases.TC_CreateNewCampaing.setapprover_newcampaiging(TC_CreateNewCampaing.java:319)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setapprover_newcampaiging_confirmation">
+                  </a> <!-- setapprover_newcampaiging_confirmation -->
+                  <span class="method-name">setapprover_newcampaiging_confirmation</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=129.0.6668.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HOISL_SANDUNJ&apos;, ip: &apos;192.168.8.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\sandunj\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11746fe01c39e68f6cd710a643da1e8c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.NewCampaingSetApprover.confirm_approver(NewCampaingSetApprover.java:51)
+	at testcases.TC_CreateNewCampaing.setapprover_newcampaiging_confirmation(TC_CreateNewCampaing.java:341)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setapprover_newcampaiging_saveandsend">
+                  </a> <!-- setapprover_newcampaiging_saveandsend -->
+                  <span class="method-name">setapprover_newcampaiging_saveandsend</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&quot;Save and Send for Approval&quot;)]&quot;}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HOISL_SANDUNJ&apos;, ip: &apos;192.168.8.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\sandunj\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11746fe01c39e68f6cd710a643da1e8c
+*** Element info: {Using=xpath, value=//span[contains(text(),&quot;Save and Send for Approval&quot;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.NewCampaingSetApprover.saveandsendapprover(NewCampaingSetApprover.java:40)
+	at testcases.TC_CreateNewCampaing.setapprover_newcampaiging_saveandsend(TC_CreateNewCampaing.java:330)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CMSproject-class-failed -->
+          <div class="suite-CMSproject-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_CreateNewCampaing</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenessrule_nextclick">
+                  </a> <!-- Fillawarenessrule_nextclick -->
+                  <span class="method-name">Fillawarenessrule_nextclick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenessrule_time_rule">
+                  </a> <!-- Fillawarenessrule_time_rule -->
+                  <span class="method-name">Fillawarenessrule_time_rule</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenesssinfor_clicknextr">
+                  </a> <!-- Fillawarenesssinfor_clicknextr -->
+                  <span class="method-name">Fillawarenesssinfor_clicknextr</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenesssinfor_enterdiscriptionenter">
+                  </a> <!-- Fillawarenesssinfor_enterdiscriptionenter -->
+                  <span class="method-name">Fillawarenesssinfor_enterdiscriptionenter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenesssinforgetlangue">
+                  </a> <!-- Fillawarenesssinforgetlangue -->
+                  <span class="method-name">Fillawarenesssinforgetlangue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenesssinforselectchannel">
+                  </a> <!-- Fillawarenesssinforselectchannel -->
+                  <span class="method-name">Fillawarenesssinforselectchannel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenesssinforsetaudiunce">
+                  </a> <!-- Fillawarenesssinforsetaudiunce -->
+                  <span class="method-name">Fillawarenesssinforsetaudiunce</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillawarenesssinfortitle">
+                  </a> <!-- Fillawarenesssinfortitle -->
+                  <span class="method-name">Fillawarenesssinfortitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewCampain_AwarenessRule">
+                  </a> <!-- NewCampain_AwarenessRule -->
+                  <span class="method-name">NewCampain_AwarenessRule</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickcheckaudiancebutton">
+                  </a> <!-- clickcheckaudiancebutton -->
+                  <span class="method-name">clickcheckaudiancebutton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickcheckaudiancecheckbox">
+                  </a> <!-- clickcheckaudiancecheckbox -->
+                  <span class="method-name">clickcheckaudiancecheckbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickcheckaudianceselecttestaudince">
+                  </a> <!-- clickcheckaudianceselecttestaudince -->
+                  <span class="method-name">clickcheckaudianceselecttestaudince</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickon_next_genralinforTo_awarnessinfor">
+                  </a> <!-- clickon_next_genralinforTo_awarnessinfor -->
+                  <span class="method-name">clickon_next_genralinforTo_awarnessinfor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickoncampaingmangemnt">
+                  </a> <!-- clickoncampaingmangemnt -->
+                  <span class="method-name">clickoncampaingmangemnt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCampagin_catagory">
+                  </a> <!-- enterCampagin_catagory -->
+                  <span class="method-name">enterCampagin_catagory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCampagin_dilvaryrate">
+                  </a> <!-- enterCampagin_dilvaryrate -->
+                  <span class="method-name">enterCampagin_dilvaryrate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCampagin_discriptnrnter">
+                  </a> <!-- enterCampagin_discriptnrnter -->
+                  <span class="method-name">enterCampagin_discriptnrnter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCampagin_fileupload">
+                  </a> <!-- enterCampagin_fileupload -->
+                  <span class="method-name">enterCampagin_fileupload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCampagin_modeselect">
+                  </a> <!-- enterCampagin_modeselect -->
+                  <span class="method-name">enterCampagin_modeselect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCampagintitle">
+                  </a> <!-- enterCampagintitle -->
+                  <span class="method-name">enterCampagintitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCampagintype">
+                  </a> <!-- enterCampagintype -->
+                  <span class="method-name">enterCampagintype</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logging_aims">
+                  </a> <!-- logging_aims -->
+                  <span class="method-name">logging_aims</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newcampaing">
+                  </a> <!-- newcampaing -->
+                  <span class="method-name">newcampaing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectcms">
+                  </a> <!-- selectcms -->
+                  <span class="method-name">selectcms</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CMSproject-class-passed -->
+        </div> <!-- panel CMSproject -->
+        <div panel-name="test-xml-CMSproject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sandunj\eclipse-workspace\CMSautomation1\Testsuites\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;CMSproject&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create New Campaing&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC_CreateNewCampaing&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create New Campaing --&gt;
+&lt;/suite&gt; &lt;!-- CMSproject --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CMSproject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CMSproject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Create New Campaing (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CMSproject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CMSproject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CMSproject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CMSproject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CMSproject');
+function tableData_CMSproject() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(28);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'setapprover_newcampaiging')
+data.setCell(0, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(0, 3, 22078);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'setapprover_newcampaiging_confirmation')
+data.setCell(1, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(1, 3, 22071);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'setapprover_newcampaiging_saveandsend')
+data.setCell(2, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(2, 3, 22065);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logging_aims')
+data.setCell(3, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(3, 3, 14349);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickcheckaudianceselecttestaudince')
+data.setCell(4, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(4, 3, 3339);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Fillawarenesssinforselectchannel')
+data.setCell(5, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(5, 3, 3282);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Fillawarenesssinforsetaudiunce')
+data.setCell(6, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(6, 3, 3256);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'enterCampagin_fileupload')
+data.setCell(7, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(7, 3, 3184);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clickoncampaingmangemnt')
+data.setCell(8, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(8, 3, 2916);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'NewCampain_AwarenessRule')
+data.setCell(9, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(9, 3, 2477);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'enterCampagintype')
+data.setCell(10, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(10, 3, 2431);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Fillawarenessrule_time_rule')
+data.setCell(11, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(11, 3, 2261);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'enterCampagin_catagory')
+data.setCell(12, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(12, 3, 2224);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'enterCampagintitle')
+data.setCell(13, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(13, 3, 2216);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Fillawarenesssinfortitle')
+data.setCell(14, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(14, 3, 2195);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'enterCampagin_modeselect')
+data.setCell(15, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(15, 3, 2176);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'enterCampagin_discriptnrnter')
+data.setCell(16, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(16, 3, 2157);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'newcampaing')
+data.setCell(17, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(17, 3, 2140);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'selectcms')
+data.setCell(18, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(18, 3, 2122);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Fillawarenesssinfor_clicknextr')
+data.setCell(19, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(19, 3, 2102);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'clickcheckaudiancebutton')
+data.setCell(20, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(20, 3, 2099);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Fillawarenessrule_nextclick')
+data.setCell(21, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(21, 3, 2098);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'clickcheckaudiancecheckbox')
+data.setCell(22, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(22, 3, 2090);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Fillawarenesssinfor_enterdiscriptionenter')
+data.setCell(23, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(23, 3, 2087);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Fillawarenesssinforgetlangue')
+data.setCell(24, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(24, 3, 2066);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'enterCampagin_dilvaryrate')
+data.setCell(25, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(25, 3, 82);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'clickon_next_genralinforTo_awarnessinfor')
+data.setCell(26, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(26, 3, 69);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TC_CreateNewCampaing')
+data.setCell(27, 2, 'testcases.TC_CreateNewCampaing')
+data.setCell(27, 3, 0);
+window.suiteTableData['CMSproject']= { tableData: data, tableDiv: 'times-div-CMSproject'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-CMSproject">
+              </div> <!-- times-div-CMSproject -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CMSproject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CMSproject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CMSproject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CMSproject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_CreateNewCampaing</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeclass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">logging_aims</span>
+                <span class="method-start">5657 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectcms</span>
+                <span class="method-start">20009 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickoncampaingmangemnt</span>
+                <span class="method-start">22132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newcampaing</span>
+                <span class="method-start">25049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterCampagintitle</span>
+                <span class="method-start">27190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterCampagintype</span>
+                <span class="method-start">29407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterCampagin_catagory</span>
+                <span class="method-start">31838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterCampagin_modeselect</span>
+                <span class="method-start">34063 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterCampagin_discriptnrnter</span>
+                <span class="method-start">36240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterCampagin_fileupload</span>
+                <span class="method-start">38398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterCampagin_dilvaryrate</span>
+                <span class="method-start">41583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickon_next_genralinforTo_awarnessinfor</span>
+                <span class="method-start">41666 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenesssinfortitle</span>
+                <span class="method-start">41736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenesssinforselectchannel</span>
+                <span class="method-start">43932 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenesssinforgetlangue</span>
+                <span class="method-start">47214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenesssinforsetaudiunce</span>
+                <span class="method-start">49281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickcheckaudiancebutton</span>
+                <span class="method-start">52537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickcheckaudiancecheckbox</span>
+                <span class="method-start">54637 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickcheckaudianceselecttestaudince</span>
+                <span class="method-start">56727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenesssinfor_enterdiscriptionenter</span>
+                <span class="method-start">60067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenesssinfor_clicknextr</span>
+                <span class="method-start">62154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NewCampain_AwarenessRule</span>
+                <span class="method-start">64257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenessrule_time_rule</span>
+                <span class="method-start">66734 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Fillawarenessrule_nextclick</span>
+                <span class="method-start">68996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setapprover_newcampaiging</span>
+                <span class="method-start">71094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setapprover_newcampaiging_saveandsend</span>
+                <span class="method-start">93174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setapprover_newcampaiging_confirmation</span>
+                <span class="method-start">115242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterclass</span>
+                <span class="method-start">137316 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
