@@ -1,6 +1,9 @@
 package testcases;
 
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
@@ -22,11 +25,18 @@ public class TC_CreateNewCampaing {
 	 
 	@BeforeClass
 	 
-	 public void beforeclass () throws InterruptedException {
+	 public void beforeclass () throws Exception {
 		 
-		    ExtentReport.setUpReport();		 
+		
+
+	     //    ExtentReport exreport = new ExtentReport();
+		 //.   ExtentSparkReporters spakreport = new ExtentSparkReporter(null);
+		
+		    ExtentReport.setUpReport();	
+		
+		    
 			DriverConfigeration drcon = new  DriverConfigeration();
-		  driver=  drcon.openbrowser();
+		    driver=  drcon.openbrowser();
 	 }
 	
 	 
