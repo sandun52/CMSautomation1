@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.text.Format;
 
 import org.openqa.selenium.By;
@@ -54,6 +56,18 @@ public class AimsLogging {
 	    	 	ExtentReport.logEvents( "PASSED test  ");
 	    		System.out.println("test1");
 	    		driver.findElement(logging).click();
+	    		
+	    		
+	    		Thread.sleep(1000);
+	    		
+	    		
+	    		
+	    String pagetitle = driver.getTitle();
+	    
+	    System.out.println("getpagetitle"+pagetitle);
+	    
+	//    assert.assertEquals(pagetitle, "AIMS");
+	    
 	    		System.out.println("test3 failed screen short");
 	    		
 	    		

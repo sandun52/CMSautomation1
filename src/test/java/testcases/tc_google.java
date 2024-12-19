@@ -1,6 +1,7 @@
 package testcases;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,11 +15,11 @@ public class tc_google {
 	 WebDriver driver ;	
 	@BeforeClass
 	 
-	 public void beforeclass () throws InterruptedException {
+	 public void beforeclass () throws Exception {
 		 
-		    ExtentReport.setUpReport();		 
+		    ExtentReport.setUpReport();	 
 			DriverConfigeration drcon = new  DriverConfigeration();
-		  driver=  drcon.openbrowser();
+		   driver=  drcon.openbrowser();
 	 }
 	
 	 
@@ -40,5 +41,12 @@ public class tc_google {
 
 	}
 	
+	@AfterTest
+	public void afterclass() {
+		
+		ExtentReport.createFinalReport();
+		//driver.quit();
+	}
 
 }
+

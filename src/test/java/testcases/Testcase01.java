@@ -21,7 +21,7 @@ public class Testcase01 {
 	}
     	
 	@Test(priority = 1)
-	public void logging_to_aims() throws InterruptedException  {
+	public void logging_to_aims() throws Exception  {
 		
 		DriverConfigeration drcon = new  DriverConfigeration();
 	    drcon.openbrowser();

@@ -10,38 +10,63 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import com.aventstack.extentreports.ExtentReporter;
+//import com.aventstack.extentreports.ExtentReporter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.MediaEntityModelProvider;
+//import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.model.ScreenCapture;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
-
-
-
-
-
-
-
+//import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
 public class ExtentReport {
 	 static ExtentReports extent;
-	static ExtentTest logger;
+	 static ExtentTest logger;
 	
 	public static void setUpReport ()
 	   {
+		
+		
+		//start reports
+		
+		String path = System.getProperty("user.dir") +"\\src\\test\\resources\\TestdataExecutionReport.html";
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+		reporter.config().setReportName("CMS Regression Suite");
+		reporter.config().setDocumentTitle("Automation Test Report");
+		reporter.config().setTheme(Theme.DARK.STANDARD); 
+		
+		extent  = new ExtentReports();
+		extent.attachReporter(reporter);
+		extent.setSystemInfo("TESTER", "SANDUN JAYASINGHE");
+		
 	//start reports
 	
-     	ExtentHtmlReporter htmlreporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"\\src\\test\\resources\\TestdataExecutionReport.html");
+		//ExtentSparkReporter report = new ExtentSparkReporter(System.getProperty("user.dir") +"\\src\\test\\resources\\TestdataExecutionReport.html");
+	//	report.config().setDocumentTitle("Automation Test Report"); // Sets the title of the report
+	//	report.config().setReportName("CMS Regression Suite");          // Sets the heading/name of the report
+	//	report.config().setTheme(Theme.DARK.STANDARD);                   // Opt
+	//	report.config().setDocumentTitle(null);
+		
+		//Extent
+     //	ExtentHtmlReporter htmlreporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"\\src\\test\\resources\\TestdataExecutionReport.html");
+     	//extent = new 
+     	
+     //	extent  = new ExtentReports();
+	//	extent.attachReporter(report);
+	//	extent.setSystemInfo("Tester", "sandun jayasinghe");
+		//extent.attachReporter(report);
+				
+				
+				
+	  
+	   
+	   
+	   
 	
-	   extent  = new ExtentReports();
-	   extent.attachReporter(htmlreporter);
-	
-	
+	 //  ExtentTest test = extent.createTest("PROJECT CMS", "CMS Automation result");
 	//extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/ExecutionReport.html", true);
 	   
 	   
@@ -97,14 +122,14 @@ public class ExtentReport {
 	   
    public static ExtentTest addScreencastFromPath (String path) throws Exception{
 	       
-		   return logger.addScreencastFromPath(path);
+		   return logger.addScreenCaptureFromPath(path);
 		    
 		  }
    
    
    public static ExtentTest addScreencastFromPath (String path, String screenme) throws Exception{
        
-	   return logger.addScreencastFromPath(path);
+	   return logger.addScreenCaptureFromPath(path);
 	    
 	  }
 
