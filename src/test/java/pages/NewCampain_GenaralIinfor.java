@@ -30,6 +30,9 @@ public class NewCampain_GenaralIinfor {
 	By campaignfileupload = By.id("supportiveDocuments");	
 	By campaigntitle = By.xpath("//*[@id=\"campaignTitle\"]");
 	By campaignhybrd = By.xpath("//*[@text()='Hybrid']");
+	By takeupbase = By.xpath("//input[@id=\"takeUpBase\"]");
+	
+	
 	
 	By deliveryRate = By.id("deliveryRate");
 	
@@ -170,6 +173,19 @@ public class NewCampain_GenaralIinfor {
 	  
 	}
 	
+	public void takeupbase	() throws Exception {
+		
+		System.out.println("set dilvary rate");
+		
+		ReadXlRead redexl= new ReadXlRead();
+		redexl.getdata("NewCampain_GenaralIinfor");
+			
+	    String takeupbaserate = ReadXlRead.getCellData(1,4);
+		 
+		 System.out.println("takeupbase"+takeupbaserate);
+         driver.findElement(takeupbase).sendKeys(takeupbaserate);		
+		
+	}
 	
 	public void dilvaryrate	() throws Exception {
 		

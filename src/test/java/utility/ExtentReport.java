@@ -94,7 +94,7 @@ public class ExtentReport {
 	
 	
 
-	   public static void logEvents (String value)
+	   public static void logEventspass (String value)
 	   {
 	       logger.log(Status.PASS, value);
 	   }

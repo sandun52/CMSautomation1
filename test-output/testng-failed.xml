@@ -5,23 +5,12 @@
     <classes>
       <class name="testcases.TC_CreateNewCampaing">
         <methods>
-          <include name="Fillawarenessrule_time_rule"/>
-          <include name="NewCampain_AwarenessRule"/>
           <include name="beforeclass"/>
-          <include name="clickcheckaudiancecheckbox"/>
-          <include name="Fillawarenessrule_nextclick"/>
-          <include name="Fillawarenesssinforgetlangue"/>
-          <include name="clickcheckaudiancebutton"/>
-          <include name="clickcheckaudianceselecttestaudince"/>
-          <include name="setapprover_newcampaiging"/>
-          <include name="Fillawarenesssinfortitle"/>
-          <include name="Fillawarenesssinforselectchannel"/>
           <include name="afterclass"/>
-          <include name="Fillawarenesssinfor_clicknextr"/>
           <include name="setapprover_newcampaiging_confirmation"/>
           <include name="TC_CreateNewCampaing"/>
+          <include name="setapprover_newcampaiging"/>
           <include name="setapprover_newcampaiging_saveandsend"/>
-          <include name="Fillawarenesssinforsetaudiunce"/>
         </methods>
       </class> <!-- testcases.TC_CreateNewCampaing -->
     </classes>
