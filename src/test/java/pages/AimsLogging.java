@@ -41,7 +41,7 @@ public class AimsLogging {
         	 try {
         		 
         		//ExtentReport.setUpReport();
-        		ExtentReport.startTestCase("TC_sandun jayasinghe1");
+        		
         		 
         		ReadXlRead redexl= new ReadXlRead();
         		redexl.getdata("aimslogging");
@@ -53,55 +53,46 @@ public class AimsLogging {
 				driver.findElement(username).sendKeys(usernames);
 	    		driver.findElement(pswrd).sendKeys(pw);
 	    		
-	    	 	ExtentReport.logEvents( "PASSED test  ");
-	    		System.out.println("test1");
 	    		driver.findElement(logging).click();
+	    		Thread.sleep(2000);
+	    		
+	    		String expected_title = ReadXlRead.getCellData(1,3);
+	    		
+	    		String actual_title = driver.getTitle();
+				assertEquals(actual_title, expected_title," Verify successfully logged to AIMS page");
+	    		
+	    
+	    	 	//ExtentReport.logEventspass( "AIMS page logging ");
+	    		System.out.println("Verify successfully logged to AIMS page");
+	    		
+	    		if (actual_title.equals(expected_title))
+	    		{
+	    			
+	 			   ExtentReport.logEventspass(actual_title);
+	    		}else {
+	    			ExtentReport.logEventsFail(actual_title);
+	    			ReportscreenShort rep = new ReportscreenShort();
+		    		String base64code = rep.getScreenshot(driver);
+		    		String path = rep.getScreenshot(driver," AIMS_LOGGING.jpg");
+		    		System.out.println("path"+path);
+		    		
+		    		ExtentReport.attachScreenshot(base64code);
+		    		ExtentReport.attachScreenshot(base64code,"AimsLoggingpage");
+		    		
+		    		
+		    		ExtentReport.addScreencastFromPath(path);
+		    		
+		    		ExtentReport.addScreencastFromPath(path, "AimsLoggingpage test");
+		    		
+		    		
+		    		ExtentReport.logEventsFail("Title mismatched");
+	    				}
 	    		
 	    		
 	    		Thread.sleep(1000);
 	    		
 	    		
-	    		
-	    String pagetitle = driver.getTitle();
-	    
-	    System.out.println("getpagetitle"+pagetitle);
-	    
-	//    assert.assertEquals(pagetitle, "AIMS");
-	    
-	    		System.out.println("test3 failed screen short");
-	    		
-	    		
-	    		Thread.sleep(1000);
-	    		
-	    		
-	    		
-	    		ReportscreenShort rep = new ReportscreenShort();
-	    		String base64code = rep.getScreenshot(driver);
-	    		String path = rep.getScreenshot(driver," AIMS_LOGGING.jpg");
-	    		System.out.println("path"+path);
-	    		
-	        //	ExtentReport.logEventsFail(MediaEntityBuilder.createScreenCaptureFromBase64String(base64code).build());
-	    
-	    	
-	    		
-	    		ExtentReport.attachScreenshot(base64code);
-	    		ExtentReport.attachScreenshot(base64code,"AimsLoggingpage");
-	    		
-	    		
-	    		ExtentReport.addScreencastFromPath(path);
-	    		
-	    		ExtentReport.addScreencastFromPath(path, "AimsLoggingpage test");
-	    		
-	    		
-	    		ExtentReport.logEventsFail("Title mismatched");
-	    		
-	    		//ExtentReport.logEventsFail(ExtentReport.attachScreenshot(driver, "Title mismatched"));
-				
-	    		//ExtentReport.logEventsFa(ExtentReport.attachScreenshot(driver, base64code));
-	    		
-	    		//ExtentReport.logEvents(base64code);
-	    		
-	    	  //  ExtentReport.logEventsFail(MediaEntityBuilder.createScreenCaptureFromBase64String(base64code).build());
+
 	    		
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

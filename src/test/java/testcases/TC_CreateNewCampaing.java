@@ -5,6 +5,9 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import org.testng.annotations.BeforeClass;
+
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -27,11 +30,6 @@ public class TC_CreateNewCampaing {
 	 
 	 public void beforeclass () throws Exception {
 		 
-		
-
-	     //    ExtentReport exreport = new ExtentReport();
-		 //.   ExtentSparkReporters spakreport = new ExtentSparkReporter(null);
-		
 		    ExtentReport.setUpReport();	
 		
 		    
@@ -61,7 +59,7 @@ public class TC_CreateNewCampaing {
 	
 	
 	@Test(priority = 2)
-		public void selectcms() throws InterruptedException{
+		public void selectcms() throws Exception{
 		
 		  pages.AimsDashBoard amdash= new AimsDashBoard(driver);
 		  amdash.navigatetocms();
@@ -71,7 +69,7 @@ public class TC_CreateNewCampaing {
 
 
 	@Test(priority = 3)
-		public void clickoncampaingmangemnt() throws InterruptedException{
+		public void clickoncampaingmangemnt() throws Exception{
 		
 			CmsDashboard cmsdash = new CmsDashboard(driver);
 		    cmsdash.navigate_to_campaingmangentlink();
@@ -80,7 +78,7 @@ public class TC_CreateNewCampaing {
 
 	@Test(priority = 4)
 	
-	public void newcampaing() throws InterruptedException{
+	public void newcampaing() throws IOException, Exception{
 		
 		NewCampainglow1 nre  = new NewCampainglow1(driver);
 		
@@ -151,11 +149,19 @@ public class TC_CreateNewCampaing {
 	
 	
 
+	//Take Up Base
+	@Test(priority = 11)
 	
-	
+	public void enterCampagin_takeupbase() throws Exception{
+		
+		NewCampain_GenaralIinfor nmd  = new NewCampain_GenaralIinfor(driver);
+		
+		nmd.takeupbase();
+			
+	}
 
 	
-	@Test(priority = 11)
+	@Test(priority = 12)
 	
 	public void enterCampagin_dilvaryrate() throws Exception{
 		
@@ -166,7 +172,7 @@ public class TC_CreateNewCampaing {
 	}
 
 
-	@Test(priority = 12)
+	@Test(priority = 13)
 	
 	public void clickon_next_genralinforTo_awarnessinfor() throws Exception{
 		
@@ -179,7 +185,7 @@ public class TC_CreateNewCampaing {
 	
 	
 	
-	@Test(priority = 13)
+	@Test(priority = 14)
 	
 	public void Fillawarenesssinfortitle() throws Exception{
 		
@@ -190,7 +196,7 @@ public class TC_CreateNewCampaing {
 	}
 	
 
-	@Test(priority = 14)
+	@Test(priority = 15)
 	
 	public void Fillawarenesssinforselectchannel() throws Exception{
 		
@@ -202,7 +208,7 @@ public class TC_CreateNewCampaing {
 	
 	
 	
-	@Test(priority = 15)
+	@Test(priority = 16)
 	
 	public void Fillawarenesssinforgetlangue() throws Exception{
 		
@@ -213,7 +219,7 @@ public class TC_CreateNewCampaing {
 	}
 	
 	
-	@Test(priority = 16)
+	@Test(priority = 17)
 	
 	public void Fillawarenesssinforsetaudiunce() throws Exception{
 		
@@ -226,7 +232,7 @@ public class TC_CreateNewCampaing {
 	
 	
 	
-	@Test(priority = 17)
+	@Test(priority = 18)
 	
 	public void clickcheckaudiancebutton() throws Exception{
 		
@@ -237,7 +243,7 @@ public class TC_CreateNewCampaing {
 	}
 	
 	
-	@Test(priority = 18)
+	@Test(priority = 19)
 	
 	public void clickcheckaudiancecheckbox() throws Exception{
 		
@@ -247,7 +253,7 @@ public class TC_CreateNewCampaing {
 			
 	}
 	
-	@Test(priority = 19)
+	@Test(priority = 20)
 	
 	public void clickcheckaudianceselecttestaudince() throws Exception{
 		
@@ -259,7 +265,7 @@ public class TC_CreateNewCampaing {
 	
 		
 	
-	@Test(priority = 20)
+	@Test(priority = 21)
 	
 	public void Fillawarenesssinfor_enterdiscriptionenter() throws Exception{
 		
@@ -269,7 +275,7 @@ public class TC_CreateNewCampaing {
 			
 	}
 	
-	@Test(priority = 21)
+	@Test(priority = 22)
 	
 	public void Fillawarenesssinfor_clicknextr() throws Exception{
 		
@@ -280,7 +286,7 @@ public class TC_CreateNewCampaing {
 	}
 	
 	
-	@Test(priority = 22)
+	@Test(priority = 23)
 	
 	public void NewCampain_AwarenessRule() throws Exception{
 		
@@ -293,7 +299,7 @@ public class TC_CreateNewCampaing {
 	}
 	
 	
-	@Test(priority = 23)
+	@Test(priority = 24)
 	
 	public void Fillawarenessrule_time_rule() throws Exception{
 		

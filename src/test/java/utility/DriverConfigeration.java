@@ -53,12 +53,17 @@ public class DriverConfigeration {
 				   assertEquals(actual_title, expected_title," Verify the title of logging page");
 				   extent  = new ExtentReports();
 				   ExtentReport.startTestCase("Verify Aims page navigation");
+				  
+				   if (actual_title.equals(expected_title)) {
+					   
+					   ExtentReport.logEventspass(actual_title);
+					   
+				   }else {
+					   
+					   ExtentReport.logEventsFail(actual_title);
+				   }
 				   
-				   
-				   
-				//   extent.pass();
-				   
-
+				
 				   System.out.println("Url open successfully ");   
 				 
 				   return driver;

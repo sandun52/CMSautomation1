@@ -31,9 +31,9 @@ public class NewCampain_AwarenessRule {
 			Thread.sleep(2000);
 		    System.out.println("test08");
 		    driver.findElement(startdate).click();
-		    driver.findElement(startdate).sendKeys("2024-09-20");
+		    driver.findElement(startdate).sendKeys("2024-12-21");
 		    driver.findElement(startdate).click();
-		    driver.findElement(Enddate).sendKeys("2024-09-30");
+		    driver.findElement(Enddate).sendKeys("2024-12-30");
 		    		driver.findElement(startdate).sendKeys(Keys.ENTER);
 		 
 			

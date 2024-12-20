@@ -31,7 +31,7 @@ public class test {
 			//  aims.logging_aims();
 			  
 			  pages.AimsDashBoard amdash= new AimsDashBoard(driver);
-			  amdash.navigatetocms();
+			  //amdash.navigatetocms();
 
 	}
 
